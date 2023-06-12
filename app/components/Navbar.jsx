@@ -40,7 +40,7 @@ function Navbar() {
         <div className="menuoptions p-3 h-56 w-56">
         <ul className="w-full h-full flex flex-col justify-center items-center gap-5 p-3 ">
         <li>
-          <Link className="m-3 hover:opacity-50" href="/work">My Work</Link>
+          <Link href="/contact">Contact</Link>
         </li>
        
         <li>
