@@ -30,7 +30,7 @@ function Navbar() {
 
       <ul className=" invisible md:visible">
         <li>
-          <Link className=" px-3 py-2 hover:opacity-50" href="/">Contect Me</Link>
+          <Link className=" px-3 py-2 hover:opacity-50" href="/">Contect Us</Link>
         </li>
       </ul>
       <div className="menu md:invisible md:absolute visible p-3 flex flex-col justify-center items-center gap-1 " >
