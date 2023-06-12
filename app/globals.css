@@ -1,12 +1,103 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
-  border:red srolid 1px;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: red soldid 1px;
 }
+
+:root {
+  --text: #f4f4eb;
+  --background: #070703;
+  --primary-button: #ea5151;
+  --secondary-button: #ffffff;
+  --accent: #c5ddd7;
+  
+}
+
 body {
-  color: white;
-  background: black;
+  color: var(--accent);
+  background: var(--background);
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
+  font-size: 1.25rem;
+  overflow-x:hidden;
+}
+.logo{
+  font-size:3rem;
+  position: relative;
+
+}
+.logo::after{
+    content: ".";
+  color:var(--primary-button);
+}
+@keyframes lig {
+  
+}
+
+.primary_button {
+  background-color: var(--pfrimary-button);
+  color: inherit;
+  border-radius:5px;
+  border: 1px solid var(--accent);
+  box-shadow: 2px 2px 10px var(--primary-button),
+  -2px -2px 10px var(--primary-button);
+}
+.menu{
+  aspect-ratio: 1/1;
+  border: var(--accent) solid 1px;
+  border-radius: 5px;
+  position: relative;
+  content:"";
+  right:2rem;
+}
+
+.menu input{
+  position: absolute;
+  aspect-ratio: 1/1;
+  height: 2rem;
+  opacity: 0;
+  z-index: 99;
+}
+.menu span{
+  height: 2px;
+  width:1rem;
+  background: var(--accent);
+  transition:all 0.2s linear;
+}
+.menu input:checked ~ span:nth-of-type(1){
+ transform: rotate(45deg);
+margin-bottom: -0.35rem;
+
+}
+.menu input:checked ~ span:nth-of-type(2){
+ transform: scale(0);
+}
+.menu input:checked ~ span:nth-of-type(3){
+ transform: rotate(-45deg);
+ margin-top: -0.4rem;
+} 
+.menuoptions{
+ opacity: 0;
+ pointer-events: none;
+  position: absolute;
+  content: "";
+  top :3rem;
+  right :0rem;
+  z-index: 5;
+  transition: all .2s linear;
+  background: var(--background);
+  border-radius:5px;
+  border: 1px solid var(--accent);
+  box-shadow: 2px 2px 10px var(--primary-button),
+  -2px -2px 10px var(--primary-button);
+}
+.menu input:checked ~ .menuoptions{
+  opacity: 1;
+ pointer-events: all;
+ top:4rem;
 }
