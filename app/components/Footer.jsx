@@ -19,7 +19,7 @@ export default function Footer(){
             <ul className="flex flex-wrap justify-center items-center mb-6 ">
                
             </ul>
-            <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2021-2022 <a href="#" className="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
+            <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023-2024 <a href="#" className="hover:underline">Raju™</a>. All Rights Reserved.</span>
         </div>
       </footer>
     )
