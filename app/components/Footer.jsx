@@ -1,10 +1,11 @@
 import { Sansita_Swashed } from 'next/font/google'
 import Link from 'next/link'
- 
 const logo = Sansita_Swashed({
   weight: '400',
   subsets: ['latin'],
 })
+
+
 
 export default function Footer(){
     return(

@@ -44,8 +44,18 @@ body {
   color: inherit;
   border-radius:5px;
   border: 1px solid var(--accent);
-  box-shadow: 2px 2px 10px var(--primary-button),
-  -2px -2px 10px var(--primary-button);
+  box-shadow: 5px 5px var(--accent);
+  
+}
+@keyframes flicker {
+    
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      box-shadow:
+          0 0 20px var(--accent);        
+  }
+  20%, 24%, 55% {        
+      box-shadow: none;
+  }    
 }
 .menu{
   aspect-ratio: 1/1;

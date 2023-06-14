@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { Sansita_Swashed } from 'next/font/google'
  
-const logo = Sansita_Swashed({
+const logof = Sansita_Swashed({
   weight: '400',
   subsets: ['latin'],
 })
@@ -13,7 +13,7 @@ function Navbar() {
   
   return (
     <div className="w-full  p-2 md:py-5 md:px-20 flex justify-between items-center">
-      <Link className={logo.className+" logo md:px-3 md:py-2 p-2 hover:opacity-50"} href="/">
+      <Link className={logof.className+" logo md:px-3 md:py-2 p-2 hover:opacity-50"} href="/">
       Raju
       </Link>
      
@@ -23,14 +23,14 @@ function Navbar() {
         </li>
        
         <li>
-          <Link className="px-3 py-2 hover:opacity-50" href="/aboutme">About Me</Link>
+          <Link className="px-3 py-2 hover:opacity-50" href="/about">About Me</Link>
         </li>
       </ul>
 
 
       <ul className=" invisible md:visible">
         <li>
-          <Link className=" px-3 py-2 hover:opacity-50" href="/">Contect Us</Link>
+          <Link className=" px-3 py-2 hover:opacity-50" href="/contact">Contect Us</Link>
         </li>
       </ul>
       <div className="menu md:invisible md:absolute visible p-3 flex flex-col justify-center items-center gap-1 " >
