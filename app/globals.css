@@ -6,16 +6,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: red soldid 1px;
+  border: red sodlid 1px;
 }
 
 :root {
-  --text: #f4f4eb;
+  --text: #ffefff;
   --background: #070703;
   --primary-button: #ea5151;
+  --primary-red: #ff8888;
   --secondary-button: #ffffff;
   --accent: #c5ddd7;
-  
+
 }
 
 body {
@@ -24,96 +25,117 @@ body {
   width: 100%;
   min-height: 100vh;
   font-size: 1.25rem;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
-.logo{
-  font-size:3rem;
+
+.logo {
+  font-size: 3rem;
   position: relative;
 
 }
-.logo::after{
-    content: ".";
-  color:var(--primary-button);
+
+.logo::after {
+  content: ".";
+  color: var(--primary-button);
 }
-@keyframes lig {
-  
-}
+
+@keyframes lig {}
 
 .primary_button {
   background-color: var(--pfrimary-button);
   color: inherit;
-  border-radius:5px;
+  border-radius: 5px;
   border: 1px solid var(--accent);
   box-shadow: 5px 5px var(--accent);
-  
+  transition:all 0.2s linear;
 }
-.primary_button :hover{
-  opacity:0.5;
+
+.primary_button:hover {
+ color:var(--primary-red)
 }
+
 @keyframes flicker {
-    
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-      box-shadow:
-          0 0 20px var(--accent);        
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    box-shadow:
+      0 0 20px var(--accent);
   }
-  20%, 24%, 55% {        
-      box-shadow: none;
-  }    
+
+  20%,
+  24%,
+  55% {
+    box-shadow: none;
+  }
 }
-.menu{
+
+.menu {
   aspect-ratio: 1/1;
   border: var(--accent) solid 1px;
   border-radius: 5px;
   position: relative;
-  content:"";
-  right:2rem;
+  content: "";
+  right: 2rem;
 }
 
-.menu input{
+.menu input {
   position: absolute;
   aspect-ratio: 1/1;
   height: 2rem;
   opacity: 0;
   z-index: 99;
 }
-.menu span{
+
+.menu span {
   height: 2px;
-  width:1rem;
+  width: 1rem;
   background: var(--accent);
-  transition:all 0.2s linear;
+  transition: all 0.2s linear;
 }
-.menu input:checked ~ span:nth-of-type(1){
- transform: rotate(45deg);
-margin-bottom: -0.35rem;
+
+.menu input:checked~span:nth-of-type(1) {
+  transform: rotate(45deg);
+  margin-bottom: -0.35rem;
 
 }
-.menu input:checked ~ span:nth-of-type(2){
- transform: scale(0);
+
+.menu input:checked~span:nth-of-type(2) {
+  transform: scale(0);
 }
-.menu input:checked ~ span:nth-of-type(3){
- transform: rotate(-45deg);
- margin-top: -0.4rem;
-} 
-.menuoptions{
- opacity: 0;
- pointer-events: none;
+
+.menu input:checked~span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  margin-top: -0.4rem;
+}
+
+.menuoptions {
+  opacity: 0;
+  pointer-events: none;
   position: absolute;
   content: "";
-  top :3rem;
-  right :0rem;
+  top: 3rem;
+  right: 0rem;
   z-index: 5;
   transition: all .2s linear;
   background: var(--background);
-  border-radius:5px;
+  border-radius: 5px;
   border: 1px solid var(--accent);
   box-shadow: 5px 5px var(--accent);
 }
-.menu input:checked ~ .menuoptions{
+
+.menu input:checked~.menuoptions {
   opacity: 1;
- pointer-events: all;
- top:4rem;
+  pointer-events: all;
+  top: 4rem;
 }
-.contact-input{
+
+.contact-input {
   background-color: var(--background);
   color: var(--accent);
   outline: none;
@@ -121,12 +143,14 @@ margin-bottom: -0.35rem;
   border-radius: 5px;
   resize: none;
 }
-form{
+
+form {
   border: 1px solid var(--accent);
   border-radius: 5px;
 }
 
-.contact-info > svg ,.contact-info >* svg{
-  fill:var(--accent);
+.contact-info>svg,
+.contact-info>* svg {
+  fill: var(--accent);
   height: 2rem;
 }
