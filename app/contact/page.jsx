@@ -3,7 +3,7 @@ import { useState } from "react"
 import emailjs from "@emailjs/browser"
 
 export default function Contact() {
-    const [values,setvalues]=useState({})
+    const [values,setvalues]=useState({name:"",email:'',message:''})
     const handleinput=(e)=>{
         const {name ,value}=e.target;
          setvalues({...values, [name ]: value})
@@ -19,7 +19,11 @@ export default function Contact() {
         },`h2XitinEvbV0pYxMX`).then(()=>{
             alert("thank you")
             console.log(values)
-
+            setvalues({name:"",email:'',message:''})
+        },
+        ()=>{
+             alert("error")
+             setvalues({name:"",email:'',message:''})
         })
 
     }
@@ -48,10 +52,10 @@ export default function Contact() {
                                 <path d="M319.988 7.973C143.293 7.973 0 151.242 0 327.96c0 141.392 91.678 261.298 218.826 303.63 16.004 2.964 21.886-6.957 21.886-15.414 0-7.63-.319-32.835-.449-59.552-89.032 19.359-107.8-37.772-107.8-37.772-14.552-36.993-35.529-46.831-35.529-46.831-29.032-19.879 2.209-19.442 2.209-19.442 32.126 2.245 49.04 32.954 49.04 32.954 28.56 48.922 74.883 34.76 93.131 26.598 2.882-20.681 11.15-34.807 20.315-42.803-71.08-8.067-145.797-35.516-145.797-158.14 0-34.926 12.52-63.485 32.965-85.88-3.33-8.078-14.291-40.606 3.083-84.674 0 0 26.87-8.61 88.029 32.8 25.512-7.075 52.878-10.642 80.056-10.76 27.2.118 54.614 3.673 80.162 10.76 61.076-41.386 87.922-32.8 87.922-32.8 17.398 44.08 6.485 76.631 3.154 84.675 20.516 22.394 32.93 50.953 32.93 85.879 0 122.907-74.883 149.93-146.117 157.856 11.481 9.921 21.733 29.398 21.733 59.233 0 42.792-.366 77.28-.366 87.804 0 8.516 5.764 18.473 21.992 15.354 127.076-42.354 218.637-162.274 218.637-303.582 0-176.695-143.269-319.988-320-319.988l-.023.107z" />
                             </svg></a>
 
-                            <a className="hover:opacity-50" target="_blank" rel="noreferrer noopener " href="https://www.linkedin.com"><svg viewBox="0 0 50 50">
+                            <a className="hover:opacity-50" target="_blank" rel="noreferrer noopener " href="https://www.linkedin.com/in/raju-maurya-15170b251"><svg viewBox="0 0 50 50">
                                 <path d="M 8 3.0097656 C 4.53 3.0097656 2.0097656 5.0892187 2.0097656 7.9492188 C 2.0097656 10.819219 4.59 12.990234 8 12.990234 C 11.47 12.990234 13.990234 10.870625 13.990234 7.890625 C 13.830234 5.020625 11.36 3.0097656 8 3.0097656 z M 3 15 C 2.45 15 2 15.45 2 16 L 2 45 C 2 45.55 2.45 46 3 46 L 13 46 C 13.55 46 14 45.55 14 45 L 14 16 C 14 15.45 13.55 15 13 15 L 3 15 z M 18 15 C 17.45 15 17 15.45 17 16 L 17 45 C 17 45.55 17.45 46 18 46 L 27 46 C 27.552 46 28 45.552 28 45 L 28 30 L 28 29.75 L 28 29.5 C 28 27.13 29.820625 25.199531 32.140625 25.019531 C 32.260625 24.999531 32.38 25 32.5 25 C 32.62 25 32.739375 24.999531 32.859375 25.019531 C 35.179375 25.199531 37 27.13 37 29.5 L 37 45 C 37 45.552 37.448 46 38 46 L 47 46 C 47.55 46 48 45.55 48 45 L 48 28 C 48 21.53 44.529063 15 36.789062 15 C 33.269062 15 30.61 16.360234 29 17.490234 L 29 16 C 29 15.45 28.55 15 28 15 L 18 15 z"></path>
                             </svg></a>
-                            <a className="hover:opacity-50" target="_blank" rel="noreferrer noopener " href="https://www.instagram.com"><svg viewBox="0 0 24 24">
+                            <a className="hover:opacity-50" target="_blank" rel="noreferrer noopener " href="https://www.instagram.com/rajumaurya_13"><svg viewBox="0 0 24 24">
                                 <path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"></path>
                             </svg></a></div>
                     </div>
@@ -64,15 +68,15 @@ export default function Contact() {
                             
                             <div>
                                 <label className=" mb-2">Your Name</label>
-                                <input type="text" name="name" className="contact-input p-3 w-full" onChange={handleinput} required />
+                                <input type="text" name="name" value={values.name} className="contact-input p-3 w-full" onChange={handleinput} required />
                             </div>
                             <div>
                                 <label className="mb-2">Your Email</label>
-                                <input type="email" name="email" className="contact-input w-full p-3" onChange={handleinput} required/>
+                                <input type="email" name="email" value={values.email} className="contact-input w-full p-3" onChange={handleinput} required/>
                             </div>
                             <div className="sm:col-span-2">
                                 <label  className="block mb-2">Your Message</label>
-                                <textarea name="message" rows="5" className="p-3 w-full contact-input" onChange={handleinput} required></textarea>
+                                <textarea name="message" rows="5" value={values.message} className="p-3 w-full contact-input" onChange={handleinput} required></textarea>
                             </div>
                             <button type="submit" className="py-3 px-5 text-center primary_button">Send message</button>
                         </form>

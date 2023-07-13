@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Reddit Clone",
+    "desc": "",
+    "imgurl": "/1.jpg",
+    "githublink": "",
+    "sitelink": "",
+    "tectstack": ["Next.js", "MongoDB", "TypeScript"]
+  },
+  {
+    "title": "Zomato",
+    "desc": "",
+    "imgurl": "/2.jpg",
+    "githublink": "",
+    "sitelink": "",
+    "tectstack": ["Next.js", "MongoDB", "TypeScript"]
+  }
+]
