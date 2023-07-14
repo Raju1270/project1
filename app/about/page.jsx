@@ -19,7 +19,7 @@ export default function About() {
                         <br /> <br />
                         I'm looking for a new opportunity where I can use my skills and experience to build innovative and user-friendly web applications.
                     </p>
-                    <Image src="/23.png" height={400} width={400} quality={100} loading="lazy" className="w-full lg:w-1/3 my-10 flex justify-center items-center" ></Image>
+                    <Image src="/23.png" height={400} width={400} quality={100} loading="lazy" alt="" className="w-full lg:w-1/3 my-10 flex justify-center items-center" ></Image>
                 </div>
             </section>
         </main>
