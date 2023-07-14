@@ -1,18 +1,18 @@
 [
   {
     "title": "Reddit Clone",
-    "desc": "",
+    "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam rerum quibusdam quia deleniti distinctio libero. Unde officia repudiandae veniam, totam adipisci velit quos vero doloremque exercitationem ipsa soluta qui. Sequi, fugiat! Quam molestiae at iusto optio quis? Mollitia libero reiciendis voluptate numquam, iure ducimus culpa, laborum ea hic natus autem?",
     "imgurl": "/1.jpg",
     "githublink": "",
     "sitelink": "",
-    "tectstack": ["Next.js", "MongoDB", "TypeScript"]
+    "techstack": ["Next.js", "MongoDB", "TypeScript"]
   },
   {
     "title": "Zomato",
-    "desc": "",
+    "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam rerum quibusdam quia deleniti distinctio libero. Unde officia repudiandae veniam, totam adipisci velit quos vero doloremque exercitationem ipsa soluta qui. Sequi, fugiat! Quam molestiae at iusto optio quis? Mollitia libero reiciendis voluptate numquam, iure ducimus culpa, laborum ea hic natus autem",
     "imgurl": "/2.jpg",
     "githublink": "",
     "sitelink": "",
-    "tectstack": ["Next.js", "MongoDB", "TypeScript"]
+    "techstack": ["Next.js", "MongoDB", "TypeScript"]
   }
 ]

@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+* ,*::before,*::after{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: red sodlid 1px;
+  
 }
 
 :root {
@@ -101,7 +101,7 @@ body {
   border: 1px solid var(--primary-button);
   box-shadow: 5px 5px var(--primary-button);
   transform: translate(-5px, -5px);
-  transition: all 0.2s linear ;
+  transition: all 0.2s linear;
 }
 
 .primary_button:hover {
@@ -198,7 +198,39 @@ form {
   to {
     transform: scale(1) rotateX(30deg);
   }
+
   from {
     transform: scale(0.9)rotateX(-10deg);
   }
+}
+
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  background: var(--primary-button);
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  top: -8px;
+  left: -8px;
+}
+
+@keyframes cursorAnim {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(5);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.expand {
+  animation: cursorAnim .5s forwards;
 }

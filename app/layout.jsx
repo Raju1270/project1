@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import CustomCursor from "./components/customCursor";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx"
 
@@ -16,7 +17,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
 
-      <body className={inter.className}>
+      <body className={`${inter.className} lg:cursor-none`}>
+        <CustomCursor/>
         <Navbar />
         {children}
         <Footer />

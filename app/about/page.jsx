@@ -3,10 +3,10 @@ import Image from "next/image";
 export default function About() {
     return (
 
-        <main className="w-full  px-10 md:p-10 flex flex-col md:flex-row">
-            <section className="w-full px-14">
-                <h2 className=" my-10 text-4xl tracking-tight font-extrabold  ">About Me</h2>
-                <div className="flex flex-col-reverse lg:flex-row justify-between">
+        <main className="w-full p-10 flex flex-col lg:flex-row">
+            <section className="w-full ">
+                <h2 className=" my-10 text-4xl tracking-tight font-extrabold px-10 ">About Me</h2>
+                <div className="flex flex-col-reverse lg:flex-row justify-between px-10">
                     <p className="text-lg font-light w-full lg:w-1/2">
 
                         Hey, I'm Raju,
