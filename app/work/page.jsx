@@ -1,4 +1,4 @@
-import Projectfield from "../components/projectfield"
+import Projectfield from "../components/Projectfield"
 export default function Work() {
     return (
         <>

@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-import CustomCursor from "./components/customCursor";
+import CustomCursor from "./components/CustomCursor";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx"
 
