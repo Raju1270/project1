@@ -1,7 +1,7 @@
 "use client"
 import { useEffect, useRef } from "react";
 
-export default function customCursor(){
+export default function CustomCursor(){
     const cursorRef = useRef(null)
 useEffect(() => {
 if (cursorRef.current == null || cursorRef == null)
