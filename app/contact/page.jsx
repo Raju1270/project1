@@ -12,23 +12,20 @@ export default function Contact() {
     const handlesubmit = (e) => {
         e.preventDefault()
         const toastId = toast.loading('Sending...');
-        emailjs.send(`service_rcfn5ei`, `template_8izkx8i`, {
-            from_name: "Rajku",
+        emailjs.send(process.env.ID, process.env.TEMPLATE, {
+            from_name: values.name,
             to_name: values.name,
-            from_email: "rajuweb7@gmail.com",
-            to_email: values.email,
+            from_email: values.email,
+            to_email: "rajuweb7@gmail.com",
             message: values.message,
-        }, `h2XitinEvbV0pYxMX`).then(() => {
+        }, process.env.PASSWORD).then(() => {
             toast.dismiss(toastId);
             toast.success('Thank you!');
-            console.log(values)
-            // setvalues({ name: "", email: '', message: '' })
+            setvalues({ name: "", email: '', message: '' })
         },
             () => {
                 toast.dismiss(toastId);
                 toast.error('This is an error!');
-
-              //  setvalues({ name: "", email: '', message: '' })
             })
 
     }
