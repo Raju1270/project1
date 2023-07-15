@@ -174,15 +174,13 @@ body {
   background-color: var(--background);
   color: var(--accent);
   outline: none;
-  border: 1px solid var(--accent);
-  border-radius: 5px;
+  border-bottom: 1px solid var(--accent);
   resize: none;
 }
-
-form {
-  border: 1px solid var(--accent);
-  border-radius: 5px;
+.contact-input:focus{
+border: 1px solid var(--primary-button);
 }
+
 
 .contact-info>svg,
 .contact-info>* svg {
