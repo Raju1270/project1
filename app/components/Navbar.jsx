@@ -1,6 +1,6 @@
 
 import Link from "next/link";
-import Header from './header';
+import Header from './Header';
 import { Sansita_Swashed } from 'next/font/google'
 
 const logof = Sansita_Swashed({
