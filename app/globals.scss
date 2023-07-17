@@ -6,7 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
+
 }
 
 :root {
@@ -82,7 +82,6 @@ body {
   min-height: 100vh;
   font-size: 1.25rem;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 .logo {
@@ -110,65 +109,6 @@ body {
   box-shadow: 0px 0px 50px var(--primary-button);
 }
 
-.menu {
-  aspect-ratio: 1/1;
-  border: var(--accent) solid 1px;
-  border-radius: 5px;
-  position: relative;
-  content: "";
-  right: 2rem;
-}
-
-.menu input {
-  position: absolute;
-  aspect-ratio: 1/1;
-  height: 2rem;
-  opacity: 0;
-  z-index: 99;
-}
-
-.menu span {
-  height: 2px;
-  width: 1rem;
-  background: var(--accent);
-  transition: all 0.2s linear;
-}
-
-.menu input:checked~span:nth-of-type(1) {
-  transform: rotate(45deg);
-  margin-bottom: -0.35rem;
-
-}
-
-.menu input:checked~span:nth-of-type(2) {
-  transform: scale(0);
-}
-
-.menu input:checked~span:nth-of-type(3) {
-  transform: rotate(-45deg);
-  margin-top: -0.4rem;
-}
-
-.menuoptions {
-  opacity: 0;
-  pointer-events: none;
-  position: absolute;
-  content: "";
-  top: 3rem;
-  right: 0rem;
-  z-index: 5;
-  transition: all .2s linear;
-  background: var(--background);
-  border-radius: 5px;
-  border: 1px solid var(--accent);
-  box-shadow: 5px 5px var(--accent);
-}
-
-.menu input:checked~.menuoptions {
-  opacity: 1;
-  pointer-events: all;
-  top: 4rem;
-}
 
 .contact-input {
   background-color: var(--background);
@@ -200,35 +140,4 @@ border: 1px solid var(--primary-button);
   from {
     transform: scale(0.9)rotateX(-10deg);
   }
-}
-
-
-.cursor {
-  width: 20px;
-  height: 20px;
-  background: var(--primary-button);
-  border-radius: 50%;
-  position: absolute;
-  pointer-events: none;
-  top: -8px;
-  left: -8px;
-}
-
-@keyframes cursorAnim {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(5);
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 0;
-  }
-}
-
-.expand {
-  animation: cursorAnim .5s forwards;
 }

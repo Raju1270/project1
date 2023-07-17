@@ -9,7 +9,7 @@ export default function Footer() {
 
     <footer className="p-4 lg:p-10">
       <div className="mx-auto max-w-screen-xl text-center">
-        <Link className={logo.className + " logo lg:px-3 lg:py-2 p-2 hover:opacity-50 lg:cursor-none"} href="/">
+        <Link className={logo.className + " logo lg:px-3 lg:py-2 p-2 hover:opacity-50  "} href="/">
           Raju
         </Link>
         <p className="my-6 ">
