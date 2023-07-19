@@ -5,27 +5,29 @@ import toast, { Toaster } from "react-hot-toast";
 
 export default function Contact() {
     const [values, setvalues] = useState({ name: "", email: '', message: '' })
+
     const handleinput = (e) => {
         const { name, value } = e.target;
         setvalues({ ...values, [name]: value })
     }
+
     const handlesubmit = (e) => {
         e.preventDefault()
         const toastId = toast.loading('Sending...');
-        emailjs.send(process.env.ID, process.env.TEMPLATE, {
+        emailjs.send(process.env.NEXT_PUBLIC_ID, process.env.NEXT_PUBLIC_TEMPLATE, {
             from_name: values.name,
             to_name: values.name,
             from_email: values.email,
             to_email: "rajuweb7@gmail.com",
             message: values.message,
-        }, process.env.PASSWORD).then(() => {
+        }, process.env.NEXT_PUBLIC_PASSWORD).then(() => {
             toast.dismiss(toastId);
             toast.success('Thank you!');
             setvalues({ name: "", email: '', message: '' })
         },
             () => {
                 toast.dismiss(toastId);
-                toast.error('This is an error!');
+                toast.error('Try Again!');
             })
 
     }

@@ -8,7 +8,7 @@ export default function projectfield() {
                     <Image src={props.imgurl} alt="project pic" width={300} height={300} />
                     <h1 className="text-4xl">{props.title}</h1>
                     <p className="font-light text-lg">{props.desc}</p>
-                    <span className="flex gap-5">{props.techstack.map((a, key) => { return (<span key={key}>{a}</span>) })}</span>
+                    <span className="grid grid-cols-2 gap-8  sm:gap-12 md:grid-cols-3 lg:grid-cols-6">{props.techstack.map((a, key) => { return (<span key={key}>{a}</span>) })}</span>
                 </div>
             )
         })}

@@ -1,7 +1,7 @@
 export default function Company() {
     return (<>
         <div className="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
-            <h2 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center lg:text-4xl">Tursted by</h2>
+            <h2 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center lg:text-4xl">Trusted by</h2>
             <div className="grid grid-cols-2 gap-8  sm:gap-12 md:grid-cols-3 lg:grid-cols-6 ">
                 <span className="flex justify-center items-center">
                     <svg className="h-9 " viewBox="0 0 125 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
