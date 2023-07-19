@@ -15,10 +15,10 @@ export default function Contact() {
         e.preventDefault()
         const toastId = toast.loading('Sending...');
         emailjs.send(process.env.NEXT_PUBLIC_ID, process.env.NEXT_PUBLIC_TEMPLATE, {
-            from_name: values.name,
+            from_name: 'Raju',
             to_name: values.name,
-            from_email: values.email,
-            to_email: "rajuweb7@gmail.com",
+            from_email: "rajuweb7@gmail.com",
+            to_email: values.email,
             message: values.message,
         }, process.env.NEXT_PUBLIC_PASSWORD).then(() => {
             toast.dismiss(toastId);
