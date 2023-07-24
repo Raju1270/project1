@@ -49,11 +49,12 @@ export async function POST(request) {
           img{
             
             margin: 20px;
+            width:160px;
     
           }
     
           
-          h2 {
+          .h2 {
             margin: 20px;
             font-size: 30px;
             font-weight: 400;
@@ -64,7 +65,7 @@ export async function POST(request) {
             border-left: 4px solid #c084fc;
             padding-left: 20px;
           }
-          h1 {
+          .h1 {
             font-size: 40px;
             font-weight: 400;
             margin: 20px;
@@ -79,9 +80,9 @@ export async function POST(request) {
       <body>
         <div class="main">
     
-          <img src="https://rajudev.vercel.app/LogoRaju.png" alt="Logo" width="160">
-          <h1>Hey 👋, ${name}</h1>
-          <h2>We got your message.</h2>
+          <img src="https://rajudev.vercel.app/LogoRaju.png" alt="Logo" >
+          <div class="h1">Hey 👋, ${name}</div>
+          <div class="h2">We got your message.</div>
           <div class="msg">" ${message} "</div>
           <p class="email">Thankyou 🙏</p>
         </div>
