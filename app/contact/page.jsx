@@ -1,11 +1,12 @@
-"use client";
-import { useState } from "react"
-import emailjs from "@emailjs/browser"
+"use client"
 import toast, { Toaster } from "react-hot-toast";
+import axios from "axios";
+import { useState } from "react";
 
 export default function Contact() {
     const [values, setvalues] = useState({ name: "", email: '', message: '' })
-
+ 
+    
     const handleinput = (e) => {
         const { name, value } = e.target;
         setvalues({ ...values, [name]: value })
@@ -14,22 +15,16 @@ export default function Contact() {
     const handlesubmit = (e) => {
         e.preventDefault()
         const toastId = toast.loading('Sending...');
-        emailjs.send(process.env.NEXT_PUBLIC_ID, process.env.NEXT_PUBLIC_TEMPLATE, {
-            from_name: 'Raju',
-            to_name: values.name,
-            from_email: "rajuweb7@gmail.com",
-            to_email: values.email,
-            message: values.message,
-        }, process.env.NEXT_PUBLIC_PASSWORD).then(() => {
+        axios.post("/api/email",values).then((res)=> {
             toast.dismiss(toastId);
-            toast.success('Thank you!');
+            toast.success(res.data.message);
             setvalues({ name: "", email: '', message: '' })
-        },
-            () => {
-                toast.dismiss(toastId);
-                toast.error('Try Again!');
-            })
+            console.log(res.data)
+        }).catch(function(error) {
+            console.log(error);
+        })
 
+           
     }
     return (
         <>
