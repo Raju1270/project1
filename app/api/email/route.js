@@ -79,7 +79,7 @@ export async function POST(request) {
       <body>
         <div class="main">
     
-          <img src="https://rajudev.vercel.app/LogoRaju.png" alt="Logo" width="200">
+          <img src="https://rajudev.vercel.app/LogoRaju.png" alt="Logo" width="160">
           <h1>Hey 👋, ${name}</h1>
           <h2>We got your message.</h2>
           <div class="msg">" ${message} "</div>
