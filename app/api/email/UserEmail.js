@@ -1,17 +1,16 @@
 import {
   Body,
-  Button,
   Column,
   Container,
   Head,
   Heading,
-  Hr,
   Html,
   Img,
   Row,
   Section,
   Tailwind,
   Text,
+  Link,
 } from "@react-email/components";
 import * as React from "react";
 
@@ -24,12 +23,14 @@ export default function UserEmail(props) {
         <Body className="bg-white my-auto mx-auto font-sans">
           <Container className="border border-solid border-gray-300 shadow rounded-xl  my-[40px] mx-auto p-[20px] w-[465px]">
             <Section className="mt-[20px]">
-              <Img
-                src={`https://rajumaurya.com/LogoRaju.png`}
-                height="50"
-                alt="Vercel"
-                className="my-0 mx-auto"
-              />
+              <Link href="https://rajumaurya.com/">
+                <Img
+                  src={`https://rajumaurya.com/LogoRaju.png`}
+                  height="50"
+                  alt="Vercel"
+                  className="my-0 mx-auto"
+                />
+              </Link>
             </Section>
             <Heading className="text-black text-[24px] font-normal p-0 my-[30px] mx-0">
               Hey! 👋 {props.username}
@@ -48,29 +49,29 @@ export default function UserEmail(props) {
             </Text>
             <Section className="text-center mt-[32px] mb-[32px]">
               <Row>
-                <Column align="right" className="px-2">
+                <Column align="right" className="px-3">
                   <Link href="https://www.github.com/Raju1270">
                     <Img
                       src={`https://rajumaurya.com/github.png`}
-                      width={64}
+                      width={60}
                       alt="social link"
                     />
                   </Link>
                 </Column>
-                <Column align="center" className="px-2">
+                <Column align="center" className="px-3">
                   <Link href="https://www.instagram.com/rajumaurya_13">
                     <Img
                       src={`https://rajumaurya.com/insta.png`}
-                      width={56}
+                      width={44}
                       alt="social link"
                     />
                   </Link>
                 </Column>
-                <Column align="left" className="px-2">
+                <Column align="left" className="px-3">
                   <Link href="https://www.linkedin.com/in/raju-maurya-15170b251">
                     <Img
                       src={`https://rajumaurya.com/linkedin.png`}
-                      width={64}
+                      width={68}
                       alt="social link"
                     />
                   </Link>
