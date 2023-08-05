@@ -9,7 +9,7 @@ export default function About() {
                 <div className="flex flex-col-reverse lg:flex-row justify-between px-10">
                     <p className="text-lg font-light w-full lg:w-1/2">
 
-                        Hey 👋, I'm Raju,
+                        Hey 👋, My name is Raju,
                         <br /> <br />
                         I'm a full stack web developer in the MERN stack with over 2 years of experience in the industry. I'm passionate about building scalable and user-friendly web applications using cutting-edge technologies.
                         <br /> <br />

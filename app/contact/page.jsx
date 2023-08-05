@@ -17,7 +17,7 @@ export default function Contact() {
         const toastId = toast.loading('Sending...');
         axios.post("/api/email",values).then((res)=> {
             toast.dismiss(toastId);
-            toast.success(res.data.message);
+            res.data.status == 200 ? toast.success(res.data.message) : toast.error(res.data.message)
             setvalues({ name: "", email: '', message: '' })
             console.log(res.data)
         }).catch(function(error) {
