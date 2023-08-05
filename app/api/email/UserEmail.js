@@ -48,13 +48,13 @@ export default function UserEmail(props) {
             </Text>
             <Section className="text-center mt-[32px] mb-[32px]">
               <Row>
-                <Column align="right">
+                <Column align="right" className="px-2">
                   <Img src={`https://rajumaurya.com/github.png`} width={64} alt="social link" />
                 </Column>
-                <Column align="center">
-                  <Img src={`https://rajumaurya.com/insta.png`} width={64} alt="social link" />
+                <Column align="center" className="px-2">
+                  <Img src={`https://rajumaurya.com/insta.png`} width={60} alt="social link" />
                 </Column>
-                <Column align="left">
+                <Column align="left" className="px-2">
                   <Img src={`https://rajumaurya.com/linkedin.png`} width={64} alt="social link" />
                 </Column>
               </Row>
