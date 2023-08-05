@@ -49,13 +49,31 @@ export default function UserEmail(props) {
             <Section className="text-center mt-[32px] mb-[32px]">
               <Row>
                 <Column align="right" className="px-2">
-                  <Img src={`https://rajumaurya.com/github.png`} width={64} alt="social link" />
+                  <Link href="https://www.github.com/Raju1270">
+                    <Img
+                      src={`https://rajumaurya.com/github.png`}
+                      width={64}
+                      alt="social link"
+                    />
+                  </Link>
                 </Column>
                 <Column align="center" className="px-2">
-                  <Img src={`https://rajumaurya.com/insta.png`} width={60} alt="social link" />
+                  <Link href="https://www.instagram.com/rajumaurya_13">
+                    <Img
+                      src={`https://rajumaurya.com/insta.png`}
+                      width={56}
+                      alt="social link"
+                    />
+                  </Link>
                 </Column>
                 <Column align="left" className="px-2">
-                  <Img src={`https://rajumaurya.com/linkedin.png`} width={64} alt="social link" />
+                  <Link href="https://www.linkedin.com/in/raju-maurya-15170b251">
+                    <Img
+                      src={`https://rajumaurya.com/linkedin.png`}
+                      width={64}
+                      alt="social link"
+                    />
+                  </Link>
                 </Column>
               </Row>
             </Section>
