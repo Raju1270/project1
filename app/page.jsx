@@ -1,30 +1,43 @@
 "use client"
 import Link from "next/link";
+
 import Company from "./components/company.jsx"
+import Image from "next/image.js";
 
 export default function Home() {
-    return (
-        <div className=" w-full  px-10 pt-24 lg:p-24"  >
+    return (<>
+        <div className="h-[60rem] w-screen py-20 px-4 flex justify-around">
+            <div className=""></div>
+            <div className="">
+                <Image src="/pic.png" alt="profile" width={400} height={400} loading="lazy" className="h-[30] aspect-square bg-gradient-to-tl to-white via-purple-500 from-purple-900 rounded-xl pointer-events-none" />
+                <div className="text-3xl mt-4 ">Hi, I'm Raju</div>
+                </div>
+        </div>
+        <div className=" h-[70rem] w-screen py-20 px-4  bg-white rounded-xl z-10">
+            project
+        </div>
+        <div className=" w-full h-[120vh] relative px-10 pt-24 lg:p-24"  >
             <svg
-                className="star absolute top-40 left-52 opacity-[0.5]f invisible lg:visible fill-purple-400"
+                className="star absolute top-20 left-52 opacity-[0.5]f invisible lg:visible fill-purple-400"
                 width="119"
                 height="134"
                 viewBox="0 0 89 114"
             >
                 <path
                     d="M44.5 0L46.5948 16.8652C49.0848 36.9114 64.3837 52.9193 84.1901 56.2026L89 57L84.1901 57.7974C64.3837 61.0807 49.0848 77.0886 46.5948 97.1348L44.5 114L42.4052 97.1348C39.9152 77.0886 24.6163 61.0807 4.8099 57.7973L0 57L4.80991 56.2026C24.6163 52.9193 39.9152 36.9114 42.4052 16.8652L44.5 0Z"
-                    
+
                 />
             </svg>
             <svg
-                className="star absolute top-[70%] right-52 opacity-[0.5]f invisible lg:visible fill-purple-400"
+                className="star absolute top-[20rem
+                ] right-52 opacity-[0.5]f invisible lg:visible fill-purple-400"
                 width="80"
                 height="114"
                 viewBox="0 0 89 114"
             >
                 <path
                     d="M44.5 0L46.5948 16.8652C49.0848 36.9114 64.3837 52.9193 84.1901 56.2026L89 57L84.1901 57.7974C64.3837 61.0807 49.0848 77.0886 46.5948 97.1348L44.5 114L42.4052 97.1348C39.9152 77.0886 24.6163 61.0807 4.8099 57.7973L0 57L4.80991 56.2026C24.6163 52.9193 39.9152 36.9114 42.4052 16.8652L44.5 0Z"
-                    
+
                 />
             </svg>
 
@@ -42,6 +55,6 @@ export default function Home() {
                 </div>
             </div>
             <Company />
-        </div>
+        </div></>
     )
 }

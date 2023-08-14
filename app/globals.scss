@@ -119,6 +119,10 @@ body {
 }
 .contact-input:focus{
 border: 1px solid var(--primary-button);
+
+}
+.contact-input:focus {
+
 }
 
 
@@ -140,4 +144,9 @@ border: 1px solid var(--primary-button);
   from {
     transform: scale(0.9)rotateX(-10deg);
   }
+}
+
+
+.picgrad{
+  background: linear-gradient(45deg,#c5ddd7,#cca0f7);
 }
