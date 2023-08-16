@@ -1,20 +1,34 @@
-"use client"
+import Company from "./components/company"
+import Badge from "./components/Badge"
 import Link from "next/link";
-
-import Company from "./components/company.jsx"
 import Image from "next/image.js";
 
 export default function Home() {
+
     return (<>
-        <div className="h-[60rem] w-screen py-20 px-4 flex justify-around">
-            <div className=""></div>
-            <div className="">
-                <Image src="/pic.png" alt="profile" width={400} height={400} loading="lazy" className="h-[30] aspect-square bg-gradient-to-tl to-white via-purple-500 from-purple-900 rounded-xl pointer-events-none" />
-                <div className="text-3xl mt-4 ">Hi, I'm Raju</div>
+        <div className="h-[70rem] w-screen flex relative pt-20">
+            <div className="w-1/2 hidden md:block"></div>
+            <div className="absolute top-[46rem] md:top-56 right-[20vw] md:right-[65vw] ">
+               <Badge />
+            </div>
+            <div className="w-screen md:w-1/2 px-4 ">
+                <div className="w-full md:w-[23rem] lg:w-96 mt-20  relative bg-gradient-to-tl to-white via-purple-500 from-purple-900 rounded-xl flex justify-center items-center">
+                    <div className="absolute inset-0 z-10"></div>
+                    <Image src="/pic.png" alt="profile" width={300} height={300} loading="lazy" className=" " />
                 </div>
+                <div className="text-4xl mt-8 w-fit " >Hi, I'm Raju</div>
+                <div className="text-lg mt-4 w-full md:w-[23rem] lg:w-[28rem] text-gray-500">Elevate your brand in the modern world with my expertise in development, strategy, and technology.</div>
+
+            </div>
         </div>
-        <div className=" h-[70rem] w-screen py-20 px-4  bg-white rounded-xl z-10">
-            project
+        <div className=" h-[70rem] w-screen px-4">
+            <div className="text-4xl w-fit ">Featured Project</div>
+            <div className="flex">
+                <Image src="/download.png" alt="project1" width={400} height={400} loading="lazy" className=" " />
+                <Image src="/download.png" alt="project2" width={400} height={400} loading="lazy" className=" " />
+                <Image src="/download.png" alt="project2" width={400} height={400} loading="lazy" className=" " />
+            </div>
+
         </div>
         <div className=" w-full h-[120vh] relative px-10 pt-24 lg:p-24"  >
             <svg
