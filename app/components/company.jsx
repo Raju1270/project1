@@ -4,7 +4,7 @@ export default function Company() {
     return (<>
          <div className="relative w-screen mt-20">
             <motion.div
-                className="absolute text-7xl md:text-9xl font-bold whitespace-nowrap uppercase stroke-purple-500 stroke-2"
+                className=" absolute text-7xl md:text-9xl font-bold whitespace-nowrap uppercase stroke-purple-500 stroke-2 stroq "
                 animate={{
                     x: [0, -4000],
                     transition: {
