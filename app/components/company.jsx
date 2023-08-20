@@ -2,7 +2,7 @@
 import { motion } from "framer-motion"
 export default function Company() {
     return (<>
-         <div className="relative w-screen mt-20">
+         <div className="relative mt-20 md:mt-10  block w-screen overflow-x-hdden h-fit ">
             <motion.div
                 className=" absolute text-7xl md:text-9xl font-bold whitespace-nowrap uppercase stroke-purple-500 stroke-2 stroq "
                 animate={{
