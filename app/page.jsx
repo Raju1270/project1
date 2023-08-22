@@ -9,7 +9,7 @@ export default function Home() {
 
     return (<>
 
-        <div className="flex flex-col-reverse md:flex-row w-screen mb-8 md:mb-20">
+        <div className="flex flex-col-reverse md:flex-row w-screen mb-8 md:mb-20 ">
             <div className="w-screen md:w-1/2 px-4 flex justify-center items-center pt-20 ">
                 <Adiv> <Badge /></Adiv>
             </div>
@@ -26,7 +26,7 @@ export default function Home() {
             </div>
         </div>
 
-        <div className="  w-screen px-4 ">
+        <div className="w-screen px-4 pb-24">
             <Adiv> <div className="text-3xl md:text-4xl w-fit py-8 md:mb-10 mb-6 ">Featured Project</div></Adiv>
             <div className="flex justify-evenly items-center flex-col md:flex-row gap-8 md:gap-0 mx-4">
                 <Imgpro src="/download.png" alt="project1" duration={0.5} />
@@ -35,11 +35,11 @@ export default function Home() {
             </div>
 
         </div>
-        <div className=" w-screen relative px-10 pt-24 bg-gray-600"  >
+        <div className=" w-screen relative px-10 py-10 md:py-24"  >
             <svg
-                className="star absolute top-20 left-52 opacity-[0.5]f invisible lg:visible fill-purple-400"
-                width="119"
-                height="134"
+                className="star absolute top-20 left-52  invisible lg:visible fill-purple-400"
+                width="89"
+                height="114"
                 viewBox="0 0 89 114"
             >
                 <path
@@ -48,8 +48,8 @@ export default function Home() {
                 />
             </svg>
             <svg
-                className="star absolute top-96 right-52 opacity-[0.5]f invisible lg:visible fill-purple-400"
-                width="80"
+                className="star absolute top-[30rem] right-56  invisible lg:visible fill-purple-400"
+                width="89"
                 height="114"
                 viewBox="0 0 89 114"
             >
