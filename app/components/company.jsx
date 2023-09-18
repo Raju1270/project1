@@ -2,9 +2,9 @@
 import { motion } from "framer-motion"
 export default function Company() {
     return (<>
-         <div className=" block w-screen overflow-x-hdden h-fit mb-20 ">
+         <div className=" block w-screen overflow-x-hidden h-fit mb-20 ">
             <motion.div
-                className=" text-7xl md:text-9xl font-bold whitespace-nowrap uppercase stroke-purple-500 stroke-2 stroq "
+                className=" text-7xl md:text-9xl font-bold whitespace-nowrap uppercase stroke-purple-500 stroke-2 stroq font-sans"
                 animate={{
                     x: [0, -4000],
                     transition: {
