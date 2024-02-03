@@ -17,7 +17,7 @@ export default function Home() {
                 <Adiv> <div className="w-full md:w-[23rem] lg:w-96 mt-20 mr-4 relative bg-gradient-to-tl to-white via-purple-500 from-purple-900 rounded-xl flex justify-center items-center">
                     <div className="absolute inset-0 z-10"></div>
 
-                    <Image src="/pic.png" alt="profile" width={300} height={300} loading="lazy" className=" " />
+                    <Image priority src="/pic.png" alt="profile" width={300} height={300}  />
 
                 </div>  </Adiv>
                 <Adiv><div className="text-4xl mt-8 w-fit " >Hi, I&apos;m Raju </div></Adiv>

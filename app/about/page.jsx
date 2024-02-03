@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Adiv } from "../components/Adiv"
 export default function About() {
     return (<>
-        <div className="mt-20 mx-4 md:mx-24">
+        <div className="mt-20 mx-4 md:mx-24 lg:mt-48">
             <div className="">
                 <Adiv>
                     <div className="text-4xl md:text-6xl w-full" >
