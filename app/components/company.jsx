@@ -18,9 +18,9 @@ export default function Company() {
                   }}
             >
                 <h1>
-                    Let's Work Together. Let's Work Together. Let's Work Together. Let's
+                   {`Let's Work Together. Let's Work Together. Let's Work Together. Let's
                     Work Together. Let's Work Together. Let's Work Together. Let's Work
-                    Together
+                    Together`}
                 </h1>
             </motion.div>
             </div>
